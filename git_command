@@ -19,6 +19,7 @@ git reset --hard HEAD~10 回退10个版本
 git reflog 查看所有的版本信息
 git reset --hard 版本号  回退到指定版本
 git commit -am "description" 将工作区的文件直接添加到仓库区，
+git tag -a v1.0 -m "descriptions" -F file_name 打标签
 
 
 git 远程管理仓库
@@ -26,4 +27,12 @@ git pull https://github.com/heidunn/learningGit.git 将远程的github的项目�
 拉取到本地后要执行 git config user.name 和 git config user.email
 git push 将本地修改的内容推送到远程github
 
+git 创建分支
+git branch 查看所有的分支，以及当前分支
+git branch heidunn 创建一个名为heidunn的分支
+git checkout heidunn 进入heidunn分支
+git checkout -b heidunn 创建并且进入heidunn分支
+git merge heidunn 将heidunn分支添加到主分支， 主分支就可以同步文件的变化
+git push -u origin heidunn 将heidunn分支推送到github
+各分支上的操作相互隔离
 
