@@ -20,3 +20,10 @@ git reflog 查看所有的版本信息
 git reset --hard 版本号  回退到指定版本
 git commit -am "description" 将工作区的文件直接添加到仓库区，
 
+
+git 远程管理仓库
+git pull https://github.com/heidunn/learningGit.git 将远程的github的项目拉取到本地
+拉取到本地后要执行 git config user.name 和 git config user.email
+git push 将本地修改的内容推送到远程github
+
+
