@@ -1,0 +1,22 @@
+git的三个区域：
+工作区：在IDE中对添加文件， 修改， 和删除
+缓存区：修改好的文件使用git add 添加到缓存区
+仓库区：在用户分支上存储每天的工作， 存储更改记录， 查看历史记录
+
+git init 初始化一个空的git仓库或者将一个已经存在的git仓库初始化
+git config user.name heidunn  添加用户名和
+git config user.email heidunn@163.com 添加账户
+git status 查看文件的状态，是否建立追踪，是否添加提交到仓库
+git add file_name 将文件建立追踪，并将他添加到缓存区， 修改后的文件添加到缓存区也是这个命令
+git reset HEAD file_name 或 git rm --cached file_name 将文件从暂存区撤销回工作区
+git add . 跟踪所有的文件
+git restore 或 git checkout 丢弃对文件的当前的修改
+git commit file_name -m "descriptions"  将文件提交到仓库-m 指定描述信息
+git log 查看当前的版本号
+git reset --hard HEAD^  回退前一个版本
+git reset --hard HEAD^^ 回退前两个版本
+git reset --hard HEAD~10 回退10个版本
+git reflog 查看所有的版本信息
+git reset --hard 版本号  回退到指定版本
+git commit -am "description" 将工作区的文件直接添加到仓库区，
+
